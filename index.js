@@ -7,4 +7,15 @@
 (function () {
     var userName = "ahmed";
     var userAge = 20;
+    var onSale = true;
+    var x = undefined;
+    var y = null;
+    var user = {
+        name: "ahmed", age: 30
+    };
+    var friends = ["aya", "asmaa", "shimaa"];
+    function sayWelcome(name) {
+        return ["ahmes", name];
+    }
+    alert(sayWelcome("ali"));
 })();
