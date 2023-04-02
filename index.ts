@@ -18,10 +18,29 @@ let y:null = null;
 let user:object = {
     name: "ahmed" , age:30
 }
-let friends:string[]=["aya" , "asmaa" , "shimaa"]
 
-function sayWelcome(name:string):string[]{
-   return ["ahmes" , name];
+    let users:object[] = [
+        {name: "ahmed", age : 22 , gende: "male"},
+        {name: "mohame", age : 26 , gende: "male"},
+        {name: "hussein", age : 40 , gende: "male"},
+        {name: "mostafa", age : 30 , gende: "male"},
+    ]
+
+    // any => super global data type
+    // api response or user enter data at input 
+    let z:any= "ss"
+
+    // tuple => double or multiple data type
+    let productInfo:[string,number, string] = ["toshiba",11,"dd"]
+    // union => or |
+    let test:string|number = "ss"
+    //void => no return
+
+
+    let friends:string[]=["aya" , "asmaa" , "shimaa"]
+
+function sayWelcome(name:string):void{
+   console.log(["ahmes" , name])
     
 }
 

@@ -13,9 +13,23 @@
     var user = {
         name: "ahmed", age: 30
     };
+    var users = [
+        { name: "ahmed", age: 22, gende: "male" },
+        { name: "mohame", age: 26, gende: "male" },
+        { name: "hussein", age: 40, gende: "male" },
+        { name: "mostafa", age: 30, gende: "male" },
+    ];
+    // any => super global data type
+    // api response or user enter data at input 
+    var z = "ss";
+    // tuple => double or multiple data type
+    var productInfo = ["toshiba", 11, "dd"];
+    // union => or |
+    var test = "ss";
+    //void => no return
     var friends = ["aya", "asmaa", "shimaa"];
     function sayWelcome(name) {
-        return ["ahmes", name];
+        console.log(["ahmes", name]);
     }
     alert(sayWelcome("ali"));
 })();
