@@ -6,8 +6,7 @@
 // tsc indec.ts --watch
 
 
-
-
+import { User } from "./User";
 
 (function () {
 let userName:string = "ahmed"
@@ -19,11 +18,36 @@ let user:object = {
     name: "ahmed" , age:30
 }
 
-    let users:object[] = [
-        {name: "ahmed", age : 22 , gende: "male"},
-        {name: "mohame", age : 26 , gende: "male"},
-        {name: "hussein", age : 40 , gende: "male"},
-        {name: "mostafa", age : 30 , gende: "male"},
+// comma or semicolon are ok ,;
+// interface User {
+//     name:string,
+//     age:number,
+//     gender:string;
+//     id?:number,
+//     sayhello?(name:string):string,
+
+// }
+
+// generics 
+// variable to change data type 
+
+function getNames<T>(names:T[]):T[]{
+    return  names
+}
+// function getNumbers(numbers:number[]):number[] {
+//         return numbers
+// }
+let names = getNames<string>(["nadia" , "ali", "mostafa"])
+let numbers = getNames<number>([1,2,3])
+let booleans = getNames<boolean>([true , false])
+// let numbers = getNumbers([1,2,3])
+    let users:User[] = [
+        {name: "ahmed", age : 22 , gender: "male", sayhello(){
+                return "sss"
+        }},
+        {name: "mohame", age : 26 , gender: "male"},
+        {name: "hussein", age : 40 , gender: "male"},
+        {name: "mostafa", age : 30 , gender: "male"},
     ]
 
     // any => super global data type
@@ -38,6 +62,19 @@ let user:object = {
 
 
     let friends:string[]=["aya" , "asmaa" , "shimaa"]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function sayWelcome(name:string):void{
    console.log(["ahmes" , name])
